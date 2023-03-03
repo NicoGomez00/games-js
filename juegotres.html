@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico 1</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div id="contain">
+        <header>  
+            <h1>Juego de Cartas</h1>
+         </header>   
+            
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegouno.html">Juego de Preguntas</a></li>
+                <li><a href="juegodos.html">Juego de Dados</a></li>
+                <li><a class="rosado" href="juegotres.html">Juego de Cartas</a></li>
+                <li><a href="informacion.html">Información</a></li>
+            </ul>
+        </nav>
+       
+
+        <main>
+            <h1>Objetivo del juego</h1><br>
+            <p>Lograr memorizar la ubicación de las diferentes cartas con el fin de voltear sucesivamente las 2 cartas idénticas que formen pareja.<br> El jugador que más cartas haya conseguido llevarse, ganará la partida.</p><br>
+            
+            <div>
+                <button id="comenzar" onclick="iniciar()">Comenzar</button>
+                <p id="intentos">Tienes 5 intentos</p>
+                <br>
+                <p id="tiempo">10</p>
+            </div>
+            <div id="cartas">
+                <div class="carta" id="carta1" onclick="validar(1)"></div>
+                <div class="carta" id="carta2" onclick="validar(2)"></div>
+                <div class="carta" id="carta3" onclick="validar(3)"></div>
+                <div class="carta" id="carta4" onclick="validar(4)"></div>
+                <div class="carta" id="carta5" onclick="validar(5)"></div>
+                <div class="carta" id="carta6" onclick="validar(6)"></div>
+                <div class="carta" id="carta7" onclick="validar(7)"></div>
+                <div class="carta" id="carta8" onclick="validar(8)"></div>
+                <div class="carta" id="carta9" onclick="validar(9)"></div>
+                <div class="carta" id="carta10" onclick="validar(10)"></div>
+                <div class="carta" id="carta11" onclick="validar(11)"></div>
+                <div class="carta" id="carta12" onclick="validar(12)"></div>
+                <div class="carta" id="carta13" onclick="validar(13)"></div>
+                <div class="carta" id="carta14" onclick="validar(14)"></div>
+                <div class="carta" id="carta15" onclick="validar(15)"></div>
+                <div class="carta" id="carta16" onclick="validar(16)"></div>
+            </div>
+            <div>
+                <h2 id="mensaje"></h2>
+            </div>
+        </main>
+
+        <footer>
+            <p>Informática General 2022</p>
+        </footer>
+        
+
+    </div>
+    
+    <script src="app/game3.js"></script>
+</body>
+</html>

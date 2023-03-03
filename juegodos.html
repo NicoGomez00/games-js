@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico 1</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div id="contain">
+        <header>
+            <h1>Juego de Dados</h1>
+        </header>   
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegouno.html">Juego de Preguntas</a></li>
+                <li><a class="rosado" href="juegodos.html">Juego de Dados</a></li>
+                <li><a href="juegotres.html">Juego de Cartas</a></li>
+                <li><a href="informacion.html">Información</a></li>
+            </ul>
+        </nav>
+       
+
+        <article>
+            <label for="jugadores">Ingresa el numero de jugadores (2 - 10):</label>
+            <input type="number" id="number" name="number"min="2" max="10">
+            <br>
+                <button id="iniciar" onclick="iniciar()">Iniciar</button>
+            <!-- 
+            <div id="juego">
+                <h2 id="jugador">Sumar el puntaje más alto luego de 10 rondas.</h2><br>
+
+                <div>
+                    <button onclick="tirarDados()">Tirar Dados</button>
+                </div>
+                <div id="dados">
+                    <img src="img/imgApp2/0.png" alt="" id="dado1">
+                    <img src="img/imgApp2/0.png" alt="" id="dado2">
+                    <img src="img/imgApp2/0.png" alt="" id="dado3">
+                    <img src="img/imgApp2/0.png" alt="" id="dado4">
+                    <img src="img/imgApp2/0.png" alt="" id="dado5">
+                </div>
+                <div>
+                    <p id="suma"></p>
+                    <h3 id="turnos">Quedan 10 turnos</h3>
+                </div>
+                <div id="puntaje">
+                    <h3>Puntajes</h3>
+                    <ul id="listaJugadores"></ul>
+                </div>
+            </div>
+
+            <div>
+                <ul id="resultados"></ul>
+            </div>-->
+        </article>
+
+        <footer>
+            <p>Informática General 2022</p>
+        </footer>
+
+    </div>
+
+    <script src="app/game2.js"></script>
+</body>
+</html>

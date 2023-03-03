@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico 1</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div id="contain">
+        <header>
+            <h1>Juego de Preguntas</h1>
+        </header> 
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="rosado" href="juegouno.html">Juego de Preguntas</a></li>
+                <li><a href="juegodos.html">Juego de Dados</a></li>
+                <li><a href="juegotres.html">Juego de Cartas</a></li>
+                <li><a href="informacion.html">Información</a></li>
+            </ul>
+        </nav>
+        
+
+        <article>
+            <div class="pregunta">
+                <h1 id="preg">Objetivo del juego</h1>
+                <p>Responder correctamente las preguntas y alcanzar el máximo puntaje.<br> Se suman puntos respondiendo correctamente y se pierden puntos usando ayudas.</p>
+                <br>
+                <p>Al final de las preguntas las ayudas no usadas pueden multiplicar tus puntos (Siempre que tengas)</p>
+            </div>
+
+            <div class="resp">
+                <ul id="respuestas">
+                    <li id="r1" class="disable resp" onclick="verificar(0)">Option</li>
+                    <li id="r2" class="resp" onclick="verificar(1)">Option</li>
+                    <li id="r3" class="resp" onclick="verificar(2)">Option</li>
+                    <li id="r4" class="resp" onclick="verificar(3)">Option</li>
+                </ul>
+            </div>
+            <p id="puntaje">Puntaje Total: 0</p>
+
+            <button id="comenzar" onclick="generarPregunta()">Comenzar</button>
+            
+            <div>
+                <button id="pista" onclick="usarPistas()">Pistas por pregunta: 2</button>
+            </div>
+            <p id="pr">Pistas restantes: 5</p>
+
+            <div id="multi">
+                <h3>Juega a los dados para multiplicar tus puntos</h3>
+                <div id="dado"></div>
+                <button id="generar" onclick="generarNumero()">Generar numero</button>
+                <div>
+                    <button id="multiplicar" onclick="multiplicar()">Multiplicar</button>
+                </div>
+            </div>
+            <div id="final">
+                <h2>Resultado Final </h2>
+                <h2 id="resultado"> </h2>
+            </div>
+        </article>
+        
+
+        <footer>
+            <p>Informática General 2022</p>
+        </footer>
+        
+    </div>
+
+    <script src="app/game1.js"></script>
+    
+</body>
+</html>
